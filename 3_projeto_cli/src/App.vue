@@ -1,12 +1,13 @@
 <template>
   <div>
+    <Header />
     <PrimeiroComponente />
     <hr>
     <LifeCycle />
     <hr>
     <Pessoa />
     <hr>
-    
+
     <!-- <div class="my-3">
       <DialogModal v-if="openDialog">
         <div><h1>Download em andamento</h1></div>
@@ -31,6 +32,7 @@
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Pessoa from './components/Pessoa.vue'
+  import Header from './components/Header.vue'
   //import DialogModal from './components/DialogModal.vue'
 
   export default {
@@ -44,6 +46,7 @@
       PrimeiroComponente,
       LifeCycle,
       Pessoa,
+      Header,
       /* DialogModal, */
     },
     methods: {
@@ -53,3 +56,10 @@
     },
   }
 </script>
+
+<style>
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+</style>
