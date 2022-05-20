@@ -4,9 +4,13 @@
         <p v-else>Em busca de emprego</p>
         <p>Hard Skills:</p>
         <ul>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>MYSQL</li>
+            <li v-for="(item, index) in hardSkills" v-bind:key="index">{{ item }}</li>
+        </ul>
+        <p>Soft Skills</p>
+        <ul>
+            <li v-for="item in softSkills" v-bind:key="item.id">
+                {{ item.soft_skill }}
+            </li>
         </ul>
 
         <div>
@@ -31,7 +35,13 @@ import Picture from './Picture.vue'
                 mostrar_email: false,
                 email: 'email@email.com',
                 meu_link: 'https://google.com',
-                textoBotao: 'Mostrar email'
+                textoBotao: 'Mostrar email',
+                hardSkills: ['PHP','JavaScript','MYSQL'],
+                softSkills: [
+                    {id: 1, soft_skill: 'Boa comunicação'},
+                    {id: 2, soft_skill: 'Trabalho em equipe'},
+                    {id: 3, soft_skill: 'Inteligência emocional'}
+                ]
             }
         },
         methods: {
