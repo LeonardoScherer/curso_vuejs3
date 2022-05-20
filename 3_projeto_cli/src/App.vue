@@ -5,8 +5,9 @@
     <LifeCycle />
     <hr>
     <Pessoa />
-
-    <div class="my-3">
+    <hr>
+    
+    <!-- <div class="my-3">
       <DialogModal v-if="openDialog">
         <div><h1>Download em andamento</h1></div>
         <div>
@@ -21,7 +22,7 @@
             Abrir dialogo
           </button>
         </div>
-    </div>
+    </div> -->
   </div>
 
 </template>
@@ -30,25 +31,25 @@
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Pessoa from './components/Pessoa.vue'
-  import DialogModal from './components/DialogModal.vue'
+  //import DialogModal from './components/DialogModal.vue'
 
   export default {
     name: 'App',
     data() {
-      return {
+      /* return {
         openDialog: false,
-      }
+      } */
     },
     components: {
       PrimeiroComponente,
       LifeCycle,
       Pessoa,
-      DialogModal
+      /* DialogModal, */
     },
     methods: {
-      onOpenDialog() {
+      /* onOpenDialog() {
         this.openDialog = true;
-      }
+      } */
     },
   }
 </script>
