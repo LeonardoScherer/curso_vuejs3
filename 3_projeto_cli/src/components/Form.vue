@@ -1,10 +1,10 @@
 <template>
-    <form action="">
+    <form action="" @submit.prevent="enviarFormulario">
         <div>
-            <InputText />
+            <input type="text" v-model="name" placeholder="Nome">
         </div>
         <div>
-            <InputText />
+            <input type="email" v-model="email" placeholder="Email">
         </div>
         <div>
             <Submit />
@@ -20,6 +20,21 @@
         components: {
             InputText,
             Submit
+        },
+        data() {
+            return {
+                name: "",
+                email: ""
+            }
+        },
+        methods:  {
+            enviarFormulario() {
+
+                const name = this.name;
+                const email = this.email;
+
+                console.log(name, email);
+            }
         }
     }
 </script>
