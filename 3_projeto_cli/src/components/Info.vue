@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>{{ email }}</p>
         <p v-if="esta_trabalhando">Trabalhando no momento</p>
         <p v-else>Em busca de emprego</p>
         <p>Hard Skills:</p>
@@ -27,13 +28,15 @@
 <script>
 import Picture from './Picture.vue'
     export default {
-    components: { Picture },
+        components: { Picture },
         name: 'Info',
+        props: {
+            email: String,
+            esta_trabalhando: Boolean
+        },
         data() {
             return {
-                esta_trabalhando: false,
                 mostrar_email: false,
-                email: 'email@email.com',
                 meu_link: 'https://google.com',
                 textoBotao: 'Mostrar email',
                 hardSkills: ['PHP','JavaScript','MYSQL'],
