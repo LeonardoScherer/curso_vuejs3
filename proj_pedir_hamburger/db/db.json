@@ -1,0 +1,49 @@
+{
+    "ingredientes": {
+        "paes": [
+            {
+                "id": 1,
+                "tipo": "Italiano"
+            },
+            {
+                "id": 2,
+                "tipo": "3 Queijos"
+            }
+        ],
+        "carnes": [
+            {
+                "id": 1,
+                "tipo": "Maminha"
+            },
+            {
+                "id": 2,
+                "tipo": "Alcatra"
+            }
+        ],
+        "opcionais": [
+            {
+                "id": 1,
+                "tipo": "Bacon"
+            },
+            {
+                "id": 2,
+                "tipo": "Cheddar"
+            }
+        ]
+    },
+    "status": [
+        {
+            "id": 1,
+            "tipo": "Solicitado"
+        },
+        {
+            "id": 2,
+            "tipo": "Em produção"
+        },
+        {
+            "id": 3,
+            "tipo": "Finalizado"
+        }
+    ],
+    "burgers": []
+}
