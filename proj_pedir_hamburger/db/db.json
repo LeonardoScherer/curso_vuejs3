@@ -47,16 +47,6 @@
   ],
   "burgers": [
     {
-      "nome": "Leo",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
       "nome": "Fulano",
       "carne": "Maminha",
       "pao": "Italiano",
