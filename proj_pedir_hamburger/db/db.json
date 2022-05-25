@@ -1,49 +1,70 @@
 {
-    "ingredientes": {
-        "paes": [
-            {
-                "id": 1,
-                "tipo": "Italiano"
-            },
-            {
-                "id": 2,
-                "tipo": "3 Queijos"
-            }
-        ],
-        "carnes": [
-            {
-                "id": 1,
-                "tipo": "Maminha"
-            },
-            {
-                "id": 2,
-                "tipo": "Alcatra"
-            }
-        ],
-        "opcionais": [
-            {
-                "id": 1,
-                "tipo": "Bacon"
-            },
-            {
-                "id": 2,
-                "tipo": "Cheddar"
-            }
-        ]
-    },
-    "status": [
-        {
-            "id": 1,
-            "tipo": "Solicitado"
-        },
-        {
-            "id": 2,
-            "tipo": "Em produção"
-        },
-        {
-            "id": 3,
-            "tipo": "Finalizado"
-        }
+  "ingredientes": {
+    "paes": [
+      {
+        "id": 1,
+        "tipo": "Italiano"
+      },
+      {
+        "id": 2,
+        "tipo": "3 Queijos"
+      }
     ],
-    "burgers": []
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Maminha"
+      },
+      {
+        "id": 2,
+        "tipo": "Alcatra"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "burgers": [
+    {
+      "nome": "Leo",
+      "carne": "Alcatra",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Fulano",
+      "carne": "Maminha",
+      "pao": "Italiano",
+      "opcionais": [
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    }
+  ]
 }
