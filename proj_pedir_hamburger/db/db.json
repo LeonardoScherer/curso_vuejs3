@@ -53,18 +53,8 @@
       "opcionais": [
         "Cheddar"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 2
-    },
-    {
-      "nome": "Ciclano",
-      "carne": "Alcatra",
-      "pao": "Italiano",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Em produção",
-      "id": 3
     }
   ]
 }
