@@ -24,6 +24,7 @@
                 <div>
                     <select name="status" id="status">
                         <option value="">Selecione</option>
+                        <option v-for="stt in status" :key="stt.id" :value="stt.tipo" :selected="burger.status == stt.tipo"> {{ stt.tipo }}</option>
                     </select>
                     <button class="delete-btn">Cancelar</button>
                 </div>
@@ -53,7 +54,20 @@ export default {
 
             console.log(this.burgers);
 
+            this.getStatus();            
+
+        },
+
+        async getStatus() {
+
+            const req = await fetch("http://localhost:3000/status");
+
+            const data = await req.json();
+
+            this.status = data;
+
         }
+
     },
     mounted() {
         this.getPedidos();
